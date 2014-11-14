@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="aplicacion">
+    <head>
+        <meta charset="utf-8" />
+        <title> Alquiler de Vehículos </title>
+        <link href="/stylesheets/bootstrap.css" rel="stylesheet">
+        <link href="/stylesheets/theme.css" rel="stylesheet">
+        <link href="/stylesheets/bootstrap-theme.min.css" rel="stylesheet">
+        <script type="text/javascript" src="/javascripts/angular.min.js"></script>
+        <script type="text/javascript" src="/javascripts/script.js"></script>
+        <script src="/stylesheets/jquery-1.10.2.min.js"></script>
+        <script src="/stylesheets/bootstrap.min.js"></script>
+        <script src="/stylesheets/holder.js"></script>
+        <link href="/stylesheets/bootstrapValidator.min.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Alquiler de Vehículos</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Inicio</a></li>
+                         <li class="active"><a href="informacion.html">Integrante</a></li>
+                    </ul>
+                </div>                
+            </div>
+        </div>
+
+        <div class="container" ng-controller="Vehiculos" ng-init="cargarVehiculos()">
+           <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <img src="/stylesheets/1.jpg" alt="" class="img-thumbnail">
+                        <h2>Xenia Vanessa Rosales Ramos</h2><br>
+                        <p class="lead">Tecnico en Ingenieria  de Sistemas Informáticos</p>
+                        <p class="lead">Docente guía: Ing. José Antonio Henríiquez Chavarría</p>
+                        <p class="lead">Sistemas 23 "B"</p>
+                        <p class="lead">Ciclo II 2014</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
